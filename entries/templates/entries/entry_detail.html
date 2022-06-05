@@ -1,5 +1,11 @@
-<article>
-    <h2>{{ entry.date_created|date:'Y-m-d H:i' }}</h2>
-    <h3>{{ entry.title }}</h3>
-    <p>{{ entry.content }}</p>
-</article>
+<!-- entries/templates/entries/entries_detail.html -->
+
+{% extends "entries/base_generic.html" %}
+
+{% block content %}
+    <article>
+        <h2>{{ entry.date_created|date:'Y-m-d H:i' }}</h2>
+        <h3>{{ entry.title }}</h3>
+        <p>{{ entry.content }}</p>
+    </article>
+{% endblock %}
